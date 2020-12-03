@@ -72,13 +72,12 @@ i {
 } */
 
 .banner {
-    /* background-image: url("/banner.jpg"); */
     height: 90vh;
-    /* opacity: 0.9; */
+    position: relative;
 }
 .home-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -87,8 +86,8 @@ i {
 }
 .form {
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 17%;
+    left: 2%;
     /* transform: translate(100px,100px); */
     color: white;
     text-emphasis: bold;
@@ -100,12 +99,13 @@ i {
 .about-text {
     /* margin-top: 0%; */
     position: absolute;
-    top: 15%;
+    top: 0%;
     left: 2%;
     color: white;
     display: flex;
     flex-direction: column;
     height: auto;
+    
 }
 .container {
     display: block;
@@ -141,22 +141,24 @@ label {
 @media (max-width:808px) {
     .about-text {
         position: absolute;
-        top: 20%;
+        top: 0%;
     }
     .form {
-        top: 30%;
+        top: 17%;
+    }
+}
+@media (max-width:555px) {
+    .form-input  {
+        width: 437px;
+        left: 32px;
+        /* border-width: 0px; */
+        border-radius: 5px;
+        padding: 16px;
     }
 }
 @media (max-width:512px) {
-    .about-text {
-        position: absolute;
-        top: 25%;
-    }
-    .form {
-        top: 35%;
-    }
     .form-input  {
-        width: 300px;
+        width: 400px;
         left: 32px;
         /* border-width: 0px; */
         border-radius: 5px;
@@ -166,10 +168,7 @@ label {
 @media (max-width:443px) {
     .about-text {
         position: absolute;
-        top: 33%;
-    }
-    .form {
-        top: 45%;
+        top: 0%;
     }
     .form-input  {
         width: 300px;
@@ -182,18 +181,19 @@ label {
 @media (max-width:338px) {
     .about-text {
         position: absolute;
-        top: 35%;
+        top: 0%;
     }
-    .form {
-        top: 45%;
+    .form-input  {
+        width: 250px;
+        left: 8px;
+        /* border-width: 0px; */
+        border-radius: 5px;
+        padding: 16px;
     }
 }
 @media (max-width:380px) {
-    .form {
-        top: 50%;
-    }
     .form-input  {
-        width: 200px;
+        width: 250px;
         left: 8px;
         /* border-width: 0px; */
         border-radius: 5px;
